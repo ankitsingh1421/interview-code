@@ -30,6 +30,18 @@ const Header = () => {
                     Policies
                   </Link>
                 </li>
+                <li>
+                  <Link to="/admin/customers" className="hover:text-blue-200 transition-colors">
+                    Customers
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/admin/help" className="hover:text-blue-200 transition-colors">
+                    Help
+                  </Link>
+                </li>
+
+
                  {/* <li>
                   <Link to="/admin/help" className="hover:text-blue-200 transition-colors">
                     help

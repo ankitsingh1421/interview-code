@@ -14,7 +14,9 @@ import AdminPolicies from './pages/admin/AdminPolicies';
 
 // Auth Guard
 import ProtectedRoute from './components/ProtectedRoute';
-import Help from './components/Help';
+
+import AdminCustomer from './pages/admin/Admincustomer';
+import Help from './pages/admin/Help';
 
 function App() {
   return (
@@ -44,10 +46,18 @@ function App() {
         } 
       />
       <Route 
+        path="/admin/customers" 
+        element={
+          <ProtectedRoute>
+            <AdminCustomer />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
         path="/admin/help" 
         element={
           <ProtectedRoute>
-            <Help />
+            <Help/>
           </ProtectedRoute>
         } 
       />
