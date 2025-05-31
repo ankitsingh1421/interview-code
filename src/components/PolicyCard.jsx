@@ -3,7 +3,7 @@ import { Check, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { usePolicy } from '../context/PolicyContext';
 
-const PolicyCard = ({ type, price, features, duration = '1 Year' }) => {
+const PolicyCard = ({ type, price, features, duration  }) => {
   const navigate = useNavigate();
   const { selectPolicy } = usePolicy();
   

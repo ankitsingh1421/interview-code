@@ -8,6 +8,7 @@ const AdminPolicies = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [viewMode, setViewMode] = useState('all'); // 'all', 'active', 'expiring', 'expired'
   const [currentPage, setCurrentPage] = useState(1);
+  
   const itemsPerPage = 5;
   
   // Filter and search policies

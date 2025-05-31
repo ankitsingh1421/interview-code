@@ -8,6 +8,7 @@ const SelectPolicy = () => {
     {
       type: 'Basic Car Coverage',
       price: 799,
+      duration:"1 Year",
       features: [
         { name: '24/7 Roadside Assistance', included: true },
         { name: 'Towing up to 25km', included: true },
@@ -19,6 +20,7 @@ const SelectPolicy = () => {
     {
       type: 'Standard Car Coverage',
       price: 1499,
+      duration:"2 Year",
       features: [
         { name: '24/7 Roadside Assistance', included: true },
         { name: 'Towing up to 50km', included: true },
@@ -30,6 +32,7 @@ const SelectPolicy = () => {
     {
       type: 'Basic Bike Coverage',
       price: 599,
+      duration:"3 Year",
       features: [
         { name: '24/7 Roadside Assistance', included: true },
         { name: 'Towing up to 15km', included: true },
@@ -57,6 +60,7 @@ const SelectPolicy = () => {
               type={policy.type}
               price={policy.price}
               features={policy.features}
+              duration={policy.duration}
             />
           ))}
         </div>
