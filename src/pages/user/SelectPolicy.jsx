@@ -7,7 +7,7 @@ const SelectPolicy = () => {
   const policies = [
     {
       type: 'Basic Car Coverage',
-      price: 799,
+      price: 2,
       duration:"1 Year",
       features: [
         { name: '24/7 Roadside Assistance', included: true },
